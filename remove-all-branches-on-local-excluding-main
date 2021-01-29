@@ -1,0 +1,2 @@
+# 1. remove ALL branches on local Excluding master & develop
+git branch -D "$(git branch -a | grep -Ev '^\*|master|develop|release-candidate')"

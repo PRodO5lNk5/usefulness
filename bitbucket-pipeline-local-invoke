@@ -1,0 +1,11 @@
+docker run -it \
+--volume="$(pwd)":/anwr \
+--workdir="/anwr" \
+--memory=2g \
+--memory-swap=2g \
+--memory-swappiness=0 \
+--entrypoint=/bin/sh \
+-e AWS_DEV_ACCESS_KEY='AKIAQKXN7FGKG5H6NPN3' \
+-e AWS_DEV_SECRET='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' \
+-e AWS_DEFAULT_REGION='eu-central-1' \
+node:12.16

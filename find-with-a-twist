@@ -1,0 +1,2 @@
+# omit Permission Denied results in "find" command
+find / -name file_name 2>&1 | grep -Ev "^\*|Permission denied|Invalid argument"
