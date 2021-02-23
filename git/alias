@@ -1,0 +1,8 @@
+[alias]
+        addit = "!f() { git add . && git commit -m \"$1\"; }; f"
+        faddit = "!f() { git add . && git commit -m \"$1\" --no-verify; }; f"
+        grow = "!f() { git push -u origin $(git rev-parse --abbrev-ref HEAD); }; f"
+        trim = "!f() { git branch -D $(git branch | grep -v -e master -e develop); }; f"
+        refresh = "!f() { git checkout develop && git pull; }; f"
+        rebirth = "!f() { git reset --hard origin/develop; }; f"
+

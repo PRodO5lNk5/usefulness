@@ -1,0 +1,1 @@
+git branch -r | grep -Ev "^\*|master|develop|release-candidate" | cut -d '/' -f 2 | xargs git push --delete origin

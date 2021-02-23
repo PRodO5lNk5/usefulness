@@ -1,0 +1,2 @@
+# see all running daemons
+ps -eo 'tty,pid,comm' | grep ^?

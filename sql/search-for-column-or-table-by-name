@@ -1,0 +1,5 @@
+-- Search column in db
+SELECT DISTINCT TABLE_NAME, COLUMN_NAME
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE COLUMN_NAME LIKE '%product_component_id%'
+  AND TABLE_SCHEMA = '<table-name>';
